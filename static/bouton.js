@@ -1,17 +1,17 @@
 // Associer chaque bouton accordéon à une page
 const pages = {
  // "force" : "force.html"
- "shoes" : "shoes.html",
-  "force" : "force.html",
-  "nike": "nike.html",
-  "adidas": "adidas.html",
-  "jewerl": "jewerl.html",
-  "pants": "pantalons.html",
-  "T-shirts": "tshirt.html",
-  "Chemises": "chemises.html",
-  "sweaters" : "sweaters.html",
-  "jerseys" : "jerseys.html",
-  "jordan" : "Jordan.html"
+ "shoes" : "/static/shoes.html",
+  "force" : "/static/force.html",
+  "nike": "/static/nike.html",
+  "adidas": "/static/adidas.html",
+  "jewerl": "/static/jewerl.html",
+  "pants": "/static/pantalons.html",
+  "T-shirts": "/static/tshirt.html",
+  "Chemises": "/static/chemises.html",
+  "sweaters" : "/static/sweaters.html",
+  "jerseys" : "/static/jerseys.html",
+  "jordan" : "/static/Jordan.html"
   
 
 };

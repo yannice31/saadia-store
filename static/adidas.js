@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", e => {
       e.preventDefault();
       const section = link.getAttribute("data-section");
-      window.location.href = `index.html#${section}`;
+      window.location.href = `/static/index.html#${section}`;
     });
   });
 });
