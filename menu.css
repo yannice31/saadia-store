@@ -1,0 +1,32 @@
+
+nav span{
+    font-size: 20px;
+}
+.hamburger{
+    width: 15px;
+    height: 3px;
+    display: flex;
+    
+    border: none;
+    background: transparent;
+    align-items: center;
+    position: relative;
+}
+.hamburger span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    
+    
+    pointer-events: none;
+    background: #333;
+    transition: opacity 0.3s 0.15s  ease-out ;
+}
+
+.hamburger span:nth-child(1){
+transform: translateY(7px);
+}
+.hamburger span:nth-child(2){
+    transform: translateY(-7px);
+}

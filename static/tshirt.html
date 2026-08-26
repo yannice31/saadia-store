@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shirts - SAADIA STORE</title>
+  <link rel="stylesheet" href="Z.css">
+  <style>
+    /* Pagination */
+    .pagination {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .pagination button {
+      padding: 8px 12px;
+      margin: 0 5px;
+      border: none;
+      background: #333;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .pagination button:disabled {
+      background: #aaa;
+      cursor: not-allowed;
+    }
+    .pagination .page-number {
+      background: #f4f4f4;
+      color: #333;
+    }
+    .pagination .active {
+      background: #92c3ee;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Navbar identique -->
+  <nav>
+    <a href="index.html" class="nav-icon">
+      <img src="../logo.jpg" alt="logo du site">
+      <span>SAADIA-STORE</span>
+    </a>
+    <div class="main-navlinks">
+      <button class="hamburger" type="button">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="navlinks-container">
+        <a data-section="home" href="#">Home</a>
+        <a data-section="apropos" href="#">About</a>
+        <a data-section="commande" href="#">Commande</a>
+        <a data-section="men" href="#">Men</a>
+
+          <!--  <a data-section="women" href="#">Women</a> -->
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🔹 Section bannière -->
+  <section class="ce">
+    <h3>Parlez sans mots</h3>
+  </section>
+
+  <!-- 🔹 Galerie chaussures -->
+  <section class="grid-container" id="shirt-gallery">
+    <div class="grid-item">
+      
+    </div>
+  </section>
+
+  <!-- 🔹 Pagination -->
+  <div class="pagination" id="pagination"></div>
+
+  <!-- 🔹 Lightbox -->
+  <div id="product-modal" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3 id="product-name"></h3>
+    <p id="product-price"></p>
+    <button id="buy-btn">Acheter via WhatsApp</button>
+  </div>
+</div>
+
+  <!-- Scripts -->
+  <script src="script.js" defer></script>
+  <script src="tshirt.js" defer></script>
+  <script src="cache.js" defer></script>
+</body>
+</html>
