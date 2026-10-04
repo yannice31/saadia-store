@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 🔹 Gestion des clics internes
-  const navLinks = document.querySelectorAll('.navlinks-container a');
+  const navLinks = document.querySelectorAll('.navlinks-container a, .sidebar a');
   navLinks.forEach(link => {
     link.addEventListener('click', function (e) {
       e.preventDefault();

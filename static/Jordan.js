@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const jordan = [];
 for (let i = 1; i <= 200; i++) {
-  if (i <= 21) {
+  if (i <= 20) {
     jordan.push(`../jordan${i}.jpg`);
   
   } 

@@ -1,43 +1,34 @@
-// Fonction qui initialise le menu hamburger
-
-// Fonction qui initialise le menu hamburger
-
-
-// On essaie d’exécuter l’init dès que possible
-
-// On essaie d’exécuter l’init dès que possible
-function initHamburgerMenu() {
- 
-  const navlinksContainer = document.querySelector(".navlinks-container");
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburger = document.querySelector(".hamburger");
+  const sidebar = document.getElementById("sidebar");
 
   // Vérifie que les éléments existent
-  if (!navlinksContainer) {
-    console.error(" Hamburger ou navlinks-container introuvable !");
+  if (!hamburger || !sidebar) {
+    console.error("⚠️ Hamburger ou sidebar introuvable !");
     return;
   }
 
-  // Affiche les éléments dans la console pour vérifier
-  
-  console.log("Navlinks Container trouvé :", navlinksContainer);
+  // Fonction toggle ouverture/fermeture
+  const toggleSidebar = () => {
+    hamburger.classList.toggle("open");
+    sidebar.classList.toggle("open");
 
-  // Fonction pour ouvrir/fermer le menu
-  const toggleNav = () => {
-   
-    navlinksContainer.classList.toggle("open");
+    const isExpanded = hamburger.getAttribute("aria-expanded") === "true";
+    hamburger.setAttribute("aria-expanded", !isExpanded);
 
-    
+    console.log("Sidebar ouverte ?", !isExpanded);
   };
 
-  
+  // Écoute du clic sur le hamburger
+  hamburger.addEventListener("click", toggleSidebar);
 
-}
-// Fonction qui initialise le menu hamburger
-
-
-
-
-
-
-
-
-
+  // Fermer la barre verticale si on clique sur un lien
+  sidebar.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      sidebar.classList.remove("open");
+      hamburger.classList.remove("open");
+      hamburger.setAttribute("aria-expanded", false);
+      console.log("Sidebar fermée après clic sur un lien");
+    });
+  });
+});

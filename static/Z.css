@@ -857,38 +857,7 @@ background-image: url('../fond.jpg');
 }
 
 
-.grid-container {
-  
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
-  gap: 20px;
-  padding: 20px;
-}
 
-.grid-item {
-  overflow: hidden;
-  border-radius: 12px;
-  transform: translateY(20px);
-  opacity: 0;
-  animation: fadeInUp 0.8s ease forwards;
-}
-
-.grid-item:nth-child(2) { animation-delay: 0.2s; }
-.grid-item:nth-child(3) { animation-delay: 0.4s; }
-.grid-item:nth-child(4) { animation-delay: 0.6s; }
-
-.grid-item img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-.grid-item img:hover {
-  transform: scale(1.08);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
 .been h3{
   
   font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
@@ -1012,6 +981,48 @@ background-image: url('../fond.jpg');
 
 
 
+
+
+
+
+
+
+
+.grid-container {
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  gap: 20px;
+  padding: 20px;
+}
+
+.grid-item {
+  overflow: hidden;
+  border-radius: 12px;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+.grid-item:nth-child(2) { animation-delay: 0.2s; }
+.grid-item:nth-child(3) { animation-delay: 0.4s; }
+.grid-item:nth-child(4) { animation-delay: 0.6s; }
+
+.grid-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.grid-item img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
 .modal {
   display: none; /* caché par défaut */
   position: fixed;
@@ -1105,6 +1116,9 @@ background-image: url('../fond.jpg');
 
 
 
+
+
+
 .modal {
   display: none;
   position: fixed;
@@ -1127,3 +1141,129 @@ background-image: url('../fond.jpg');
   cursor: pointer;
   font-size: 20px;
 }
+
+
+
+@media(max-width: 500px) {
+  .nike, .jordan, .force, .adidas, .ear {
+    min-height: 250px;
+    background-position: center;
+  }
+  .nike h3, .jordan h3, .force h3 {
+    font-size: 18px;
+  }
+}
+
+
+@media(max-width: 500px) {
+  .commande-container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 15px;
+  }
+}
+
+@media(max-width: 500px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media(max-width: 600px) {
+  .navlinks-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .navlinks-container a {
+    flex: 0 0 auto;
+    padding: 10px;
+  }
+}
+
+
+/* Par défaut : hamburger caché */
+.hamburger { 
+  display: none;
+ }
+.sidebar{
+  display:none;
+}
+/* Mobile */
+@media(max-width: 600px) {
+  .navlinks-container { display: none; }
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  .hamburger span {
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* Barre verticale */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -220px; /* cachée */
+    width: 220px;
+    height: 100%;
+    background: #fafafa;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+  }
+  .sidebar.open { left: 0; }
+  .sidebar a {
+    margin: 10px 0;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+  }
+
+  /* Animation hamburger en croix */
+  .hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+}
+
+
+
+/* Barre verticale cachée par défaut */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -240px; /* hors écran */
+  width: 240px;
+  height: 100%;
+  background: #fafafa;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transition: left 0.3s ease; /* animation fluide */
+  z-index: 1000;
+}
+
+/* Quand elle est ouverte */
+.sidebar.open {
+  left: 0; /* coulisse vers l’écran */
+}
+

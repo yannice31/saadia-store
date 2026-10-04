@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const shirts = [];
 for (let i = 1; i <= 200; i++) {
-  if (i <= 21) {
+  if (i <= 19) {
     shirts.push(`../shi${i}.jpg`);
   
   } 
@@ -12,7 +12,7 @@ const gallery = document.getElementById("shirt-gallery");
   const pagination = document.getElementById("pagination");
 
   let currentPage = 1;
-  const perPage = 20; // nb de photos par page
+  const perPage = 15; // nb de photos par page
   const totalPages = Math.ceil(
     shirts.length / perPage);
 
