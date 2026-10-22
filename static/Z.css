@@ -674,7 +674,12 @@ background-image: url('../fond.jpg');
 }
 
 
-/*chaussure*/
+
+
+
+
+
+/*adidas*/
 .adidas{
   
   background-image: url('../adidas.png');
@@ -698,6 +703,12 @@ background-image: url('../fond.jpg');
   z-index: 2;
 }
 
+
+
+
+
+
+/*Chaussure*/
 
 
 .chaussure{
@@ -728,6 +739,62 @@ background-image: url('../fond.jpg');
 
 
 
+
+
+
+/*boucle d'oreille*/
+.ear{
+  
+  background-image: url('../ear.png');
+  background-size: cover;    /* image de fond couvre tout */
+ background-position: 50% 30%;
+  min-height: 400px;         /* hauteur mini */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: transparent;              /* lisibilité sur fond */
+  padding: 20px;
+}
+.ear h3{
+  
+  font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
+  color: white;
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+}
+
+/*Air force*/
+.force h3{
+  
+  font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
+  color: white;
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+}
+.force{
+   
+  background-image: url('../force.png');
+  background-size: cover;    /* image de fond couvre tout */
+ background-position: 50% 30%;
+  min-height: 400px;         /* hauteur mini */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: transparent;              /* lisibilité sur fond */
+  padding: 20px;
+}
+
+
+
+
+
+/*Air jordan*/
 .jordan h3{
   
   font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
@@ -756,83 +823,7 @@ background-image: url('../fond.jpg');
 
 
 
-.nike h3{
-  
-  font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
-  color: white;
-  max-width: 600px;
-  position: relative;
-  z-index: 2;
-}
-.nike{
-  
-  background-image: url('../nikes.png');
-  background-size: cover;    /* image de fond couvre tout */
- background-position: 20% 90%;
-  min-height: 400px;         /* hauteur mini */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: transparent;              /* lisibilité sur fond */
-  padding: 20px;
-}
-
-
-
-
-.force h3{
-  
-  font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
-  color: white;
-  max-width: 600px;
-  position: relative;
-  z-index: 2;
-}
-.force{
-  
-  background-image: url('../force.png');
-  background-size: cover;    /* image de fond couvre tout */
- background-position: 50% 30%;
-  min-height: 400px;         /* hauteur mini */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: transparent;              /* lisibilité sur fond */
-  padding: 20px;
-}
-
-
-
-
-
-/*boucle d'oreille*/
-.ear{
-  
-  background-image: url('../ear.png');
-  background-size: cover;    /* image de fond couvre tout */
- background-position: 50% 30%;
-  min-height: 400px;         /* hauteur mini */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: transparent;              /* lisibilité sur fond */
-  padding: 20px;
-}
-.ear h3{
-  
-  font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
-  color: white;
-  max-width: 600px;
-  position: relative;
-  z-index: 2;
-}
-
+/*Bijou*/
 .jew{
   
   background-image: url('../bijou1.jpg');
@@ -858,6 +849,62 @@ background-image: url('../fond.jpg');
 
 
 
+
+
+/*maillot*/
+
+.maillot{
+  
+  background-image: url("../maillot.png");
+  background-size: cover;    /* image de fond couvre tout */
+ background-position: 50% 30%;
+  min-height: 400px;         /* hauteur mini */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: transparent;              /* lisibilité sur fond */
+  padding: 20px;
+}
+.maillot h3{
+  
+  font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
+  color: white;
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+/*nike*/
+
+.nike h3{
+  
+  font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
+  color: white;
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+}
+.nike{
+  
+  background-image: url('../nikes.png');
+  background-size: cover;    /* image de fond couvre tout */
+ background-position: 20% 90%;
+  min-height: 400px;         /* hauteur mini */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: transparent;              /* lisibilité sur fond */
+  padding: 20px;
+}
+
 .been h3{
   
   font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
@@ -882,7 +929,28 @@ background-image: url('../fond.jpg');
 }
 
 
-
+.pants{
+  
+  background-image: url("../pant.png");
+  background-size: cover;    /* image de fond couvre tout */
+ background-position: 50% 30%;
+  min-height: 400px;         /* hauteur mini */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: transparent;              /* lisibilité sur fond */
+  padding: 20px;
+}
+.pants h3{
+  
+  font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
+  color: white;
+  max-width: 600px;
+  position: relative;
+  z-index: 2;
+}
 
 .shirt{
   
@@ -906,54 +974,12 @@ background-image: url('../fond.jpg');
   position: relative;
   z-index: 2;
 }
-.de{
-  
-  background-image: url("../pant.png");
-  background-size: cover;    /* image de fond couvre tout */
- background-position: 50% 30%;
-  min-height: 400px;         /* hauteur mini */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: transparent;              /* lisibilité sur fond */
-  padding: 20px;
-}
-.de h3{
-  
-  font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
-  color: white;
-  max-width: 600px;
-  position: relative;
-  z-index: 2;
-}
 
 
 
 
-.maillot h3{
-  
-  font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
-  color: white;
-  max-width: 600px;
-  position: relative;
-  z-index: 2;
-}
-.maillot{
-  
-  background-image: url("../maillot.png");
-  background-size: cover;    /* image de fond couvre tout */
- background-position: 50% 30%;
-  min-height: 400px;         /* hauteur mini */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: transparent;              /* lisibilité sur fond */
-  padding: 20px;
-}
+
+
 
 .fe h3{
   font-size: clamp(20px, 4vw, 36px); /* taille adaptative */
