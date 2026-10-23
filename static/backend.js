@@ -1,7 +1,20 @@
 const VERIFY_TOKEN = "peguiesanata";
 const express = require("express");
 const app = express();
+const path = require('path');
 
+
+
+
+app.use(express.static(path.join(__dirname, 'static')));
+
+
+
+
+app.get('/', (req,res) => {
+
+  res.sendFile(path.join(__dirname, 'static', 'index.html'));
+});
 
 
 // Vérification du webhook
@@ -20,11 +33,11 @@ app.get("/webhook", (req, res) => {
 });
 
 // Réception des messages
-app.post("/webhook", (req, res) => {
+app.post("/webhook", express.json(), (req, res) => {
   console.log("Message reçu :", JSON.stringify(req.body, null, 2));
   res.sendStatus(200);
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 1000;
 app.listen(PORT, () => console.log(`🚀 Webhook actif sur le port ${PORT}`));
 
