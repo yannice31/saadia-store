@@ -1,7 +1,7 @@
 {
   "name": "saadia-store",
   "version": "1.0.0",
-  "main": "static/backend.js.",
+  "main": "static/backend.js",
   "scripts": {
     "start": "node static/backend.js"
   },
