@@ -25,4 +25,6 @@ app.post("/webhook", (req, res) => {
   res.sendStatus(200);
 });
 
-app.listen(3000, () => console.log("🚀 Webhook actif sur Render"));
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => console.log(`🚀 Webhook actif sur le port ${PORT}`));
+
